@@ -1,26 +1,26 @@
 
-class complex_number:
+class complex:
     def __init__(self, a=None , b=None):
         self.a = a
         self.b = b
 
 
     def add(self ,C):
-        result=complex_number()
+        result=complex()
         result.a = self.a + C.a
         result.b = self.b + C.b
         return result
         #Add
 
     def sub(self, C):
-        result = complex_number()
+        result = complex()
         result.a = self.a - C.a
         result.b = self.b - C.b
         return result   
         #Sub
 
     def mul(self, C):
-        result = complex_number()
+        result = complex()
         result.a = self.a * C.a + self.a + C.b
         result.b = self.b * C.a + self.b + C.b
         return result
@@ -37,8 +37,8 @@ image = int(input())
 real = int(input())
 image = int(input())
 
-complex1=complex_number(real,image)
-complex2=complex_number(real,image)
+complex1=complex(real,image)
+complex2=complex(real,image)
 
 print('ADD:')
 print((complex1.add(complex2)).show(),'\n')
